@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Octowl/angular-tdd/issues"
   },
-  "homepage": "https://github.com/Octowl/angular-tdd#readme"
+  "homepage": "https://github.com/Octowl/angular-tdd#readme",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  }
 }
