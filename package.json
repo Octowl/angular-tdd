@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Octowl/angular-tdd#readme",
   "dependencies": {
+    "browser-sync": "^2.8.2",
     "gulp": "^3.9.0"
   }
 }
