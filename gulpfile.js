@@ -1,9 +1,10 @@
-/*global require*/
+/*global require, __dirname*/
 
 (function () {
   'use strict';
   var gulp = require('gulp'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    karma = require('karma').server;
 
   gulp.task('serve', function () {
     browserSync.init({
@@ -20,7 +21,16 @@
     gulp.watch(['app/**/*.*'])
       .on('change', browserSync.reload);
   });
-  
+
+  gulp.task('test-browser', function () {
+    console.log(__dirname);
+    karma.start({
+      configFile: __dirname + '/karma.conf.js',
+      singleRun: true,
+      reporters: ['mocha']
+    });
+  });
+
   gulp.task('serve-test', function () {
     browserSync.init({
       notify: false,
