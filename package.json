@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Octowl/angular-tdd#readme",
   "dependencies": {
     "browser-sync": "^2.8.2",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "karma": "^0.13.9",
+    "mocha": "^2.2.5"
   }
 }
