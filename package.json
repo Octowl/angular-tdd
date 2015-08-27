@@ -21,5 +21,8 @@
     "gulp": "^3.9.0",
     "karma": "^0.13.9",
     "mocha": "^2.2.5"
+  },
+  "devDependencies": {
+    "karma-mocha-reporter": "^1.1.1"
   }
 }
