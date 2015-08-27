@@ -15,5 +15,7 @@
   app.get('/contacts', function (request, response) {
     response.status(200).json(contacts);
   });
+  
+  app.listen(9001);
 
 }());
