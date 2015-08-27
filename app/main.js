@@ -3,5 +3,8 @@
 (function () {
   'use strict';
 
-  angular.module('AddressBook', []);
+  angular.module('AddressBook', [])
+    .service('contactService', function ($http) {
+      this.contacts = [];
+    });
 }());
